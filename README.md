@@ -16,21 +16,13 @@
 
 This is an artificial intelligence application built on the concept of **object detection**. Analyze basketball shots by digging into the data collected from object detection. We can get the result by simply uploading files to the web App, or submitting a **POST request** to the API. Please check the [features](#features) below. There are more features coming up! Feel free to follow.
 
-All the data for the shooting pose analysis is calculated by implementing [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose). Please note that this is an implementation only for noncommercial research use only. Please read the [LICENSE](https://github.com/chonyy/AI-basketball-analysis/blob/master/LICENSE), which is exaclty same as the [CMU's OpenPose License](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/LICENSE).
+All the data for the shooting pose analysis is calculated by implementing [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose).
 
 If your are interested in the concept of human pose estimation, I have written a [research paper **summary**](https://towardsdatascience.com/openpose-research-paper-summary-realtime-multi-person-2d-pose-estimation-3563a4d7e66) of OpenPose. Check it out!
 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine.
-
-### Get a copy
-
-Get a copy of this project by simply running the git clone command.
-
-``` git
-git clone https://github.com/chonyy/AI-basketball-analysis.git
-```
 
 ### Prerequisites
 
@@ -61,12 +53,6 @@ python app.py
 [<img src="https://colab.research.google.com/assets/colab-badge.svg" align="center">](https://colab.research.google.com/github/hardik0/AI-basketball-analysis-on-google-colab/blob/master/AI_basketball_analysis_google_colab.ipynb)
 
 Thanks to [hardik0](https://github.com/hardik0/AI-basketball-analysis-on-google-colab). Now we can play around with it without a GPU machine!
-
-##### Heroku
-
-This project is also hosted on [Heroku](https://ai-basketball-analysis.herokuapp.com/). However, the heavy computation of TensorFlow may cause Timeout error and crash the app (especially for video analysis). Therefore, hosting the project on your local machine is more preferable.
-
-Please note that the shooting pose analysis won't be running on the Heroku hosted website, since a CUDA device is required to run OpenPose.
 
 ## Project Structure
 
